@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Υλικό Classwork HTML - Ολοκληρωμένα Μαθήματα με Παραδείγματα & Εμφάνιση</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+    h1, h2, h3 { color: #2c3e50; }
+    h1 { text-align: center; margin-bottom: 30px; }
+    hr { margin: 20px 0; border: 0; border-top: 2px solid #ccc; }
+    pre { background: #f4f4f4; padding: 10px; border-left: 4px solid #2c3e50; overflow-x: auto; }
+    code { font-family: Consolas, monospace; }
+    .lesson { margin-bottom: 50px; }
+    .example { margin: 10px 0; padding: 10px; background: #e8f0fe; border-left: 4px solid #4285f4; }
+    .result { margin: 5px 0 20px 0; padding: 5px 10px; background: #f0f0f0; border-left: 4px solid #2ecc71; }
+  </style>
+</head>
+<body>
+
+  <h1>Υλικό Classwork HTML με Παραδείγματα & Εμφάνιση</h1>
+
+  <!-- Μάθημα 1 -->
+  <div class="lesson">
+    <h2>Μάθημα 1: Page Title, Styles, Formatting, Colors & RGB</h2>
+    <hr>
+<h3>Page Title (Τίτλος Σελίδας)</h3>
+    <div class="example">
+      <strong>Άσκηση:</strong> Δημιούργησε σελίδα με τίτλο "Η Σελίδα Μου".<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;title&gt;Η Σελίδα Μου&lt;/title&gt;</code></pre>
+      <strong>Εμφάνιση:</strong><div class="result">Η Σελίδα Μου (εμφανίζεται στον τίτλο του browser)</div>
+    </div>
+
+ <h3>Styles (Στυλ)</h3>
+    <div class="example">
+      <strong>Άσκηση:</strong> Κάνε το κείμενο "Γεια σου" μπλε και μεγέθους 20px.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;p style="color: blue; font-size: 20px;"&gt;Γεια σου&lt;/p&gt;</code></pre>
+      <strong>Εμφάνιση:</strong><div class="result" style="color: blue; font-size:20px;">Γεια σου</div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Χρησιμοποίησε <code>del</code>, <code>ins</code>, <code>sub</code> και <code>sup</code> σωστά.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;p&gt;Αυτό το κείμενο είναι &lt;del&gt;διαγραμμένο&lt;/del&gt;, &lt;ins&gt;προστιθέμενο&lt;/ins&gt;, με δείκτη H&lt;sub&gt;2&lt;/sub&gt;O και εκθέτη &lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">Αυτό το κείμενο είναι <del>διαγραμμένο</del>, <ins>προστιθέμενο</ins>, με δείκτη H<sub>2</sub>O και εκθέτη <sup>2</sup>.</div>
+    </div>
+  </div>
+
+  <h3>Colors & RGB</h3>
+    <div class="example">
+      <strong>Άσκηση:</strong> Κόκκινο κείμενο και RGB μπλε.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;p style="color: red;"&gt;Κόκκινο&lt;/p&gt;
+&lt;p style="color: rgb(0,128,255);"&gt;Μπλε RGB&lt;/p&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result" style="color:red;">Κόκκινο</div>
+      <div class="result" style="color:rgb(0,128,255);">Μπλε RGB</div>
+    </div>
+  </div>
+
+  <!-- Μάθημα 2 -->
+  <div class="lesson">
+    <h2>Μάθημα 2: CSS, Comments, Quotations, Links</h2>
+    <hr>
+    <div class="example">
+      <strong>Άσκηση:</strong> Κάνε όλους τους τίτλους h1 πράσινους.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;style&gt;
+h1 { color: green; }
+&lt;/style&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <h1 style="color:green;">Τίτλος h1</h1>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Γράψε ένα σχόλιο που δεν φαίνεται στη σελίδα.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;!-- Αυτό είναι ένα σχόλιο --&gt;</code></pre>
+      <strong>Εμφάνιση:</strong><div class="result">(Δεν εμφανίζεται τίποτα)</div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Δώσε σύντομο και μεγάλο απόσπασμα.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;q&gt;Σύντομο απόσπασμα&lt;/q&gt;
+&lt;blockquote&gt;Μεγάλο απόσπασμα&lt;/blockquote&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result"><q>Σύντομο απόσπασμα</q></div>
+      <div class="result"><blockquote>Μεγάλο απόσπασμα</blockquote></div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Δημιούργησε σύνδεσμο προς Google.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result"><a href="https://www.google.com" target="_blank">Google</a></div>
+    </div>
+  </div>
+
+  <!-- Μάθημα 3 -->
+  <div class="lesson">
+    <h2>Μάθημα 3: Images & Favicon</h2>
+    <hr>
+    <div class="example">
+      <strong>Άσκηση:</strong> Εμφάνισε μια εικόνα με πλάτος 200px.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;img src="εικόνα.jpg" alt="Περιγραφή" width="200"&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result"><img src="https://via.placeholder.com/200" alt="Περιγραφή" width="200"></div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Πρόσθεσε favicon στη σελίδα.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;link rel="icon" type="image/png" href="favicon.png"&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">(Φαίνεται στο tab του browser, όχι στη σελίδα)</div>
+    </div>
+  </div>
+
+  <!-- Μάθημα 4 -->
+  <div class="lesson">
+    <h2>Μάθημα 4: Tables, Colspan & Rowspan</h2>
+    <hr>
+    <div class="example">
+      <strong>Άσκηση:</strong> Δημιούργησε πίνακα με Όνομα & Ηλικία.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Όνομα&lt;/th&gt;&lt;th&gt;Ηλικία&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Μαρία&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">
+        <table border="1">
+          <tr><th>Όνομα</th><th>Ηλικία</th></tr>
+          <tr><td>Μαρία</td><td>20</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Χρησιμοποίησε colspan για επικεφαλίδα.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th colspan="2"&gt;Πληροφορίες&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Όνομα&lt;/td&gt;&lt;td&gt;Ηλικία&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">
+        <table border="1">
+          <tr><th colspan="2">Πληροφορίες</th></tr>
+          <tr><td>Όνομα</td><td>Ηλικία</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Χρησιμοποίησε rowspan για να ενώσεις δύο σειρές.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;td rowspan="2"&gt;Μαρία&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Φοιτήτρια&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">
+        <table border="1">
+          <tr><td rowspan="2">Μαρία</td><td>20</td></tr>
+          <tr><td>Φοιτήτρια</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+   <!-- Μάθημα 5 -->
+  <div class="lesson">
+    <h2>Μάθημα 5: Λίστες (Ordered & Unordered)</h2>
+    <hr>
+    <div class="example">
+      <strong>Άσκηση:</strong> Δημιούργησε αριθμημένη λίστα.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;ol&gt;&lt;li&gt;Πρώτο&lt;/li&gt;&lt;li&gt;Δεύτερο&lt;/li&gt;&lt;/ol&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">
+        <ol><li>Πρώτο</li><li>Δεύτερο</li></ol>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>Άσκηση:</strong> Δημιούργησε λίστα με κουκκίδες.<br>
+      <strong>Λύση:</strong>
+      <pre><code>&lt;ul&gt;&lt;li&gt;Στοιχείο 1&lt;/li&gt;&lt;li&gt;Στοιχείο 2&lt;/li&gt;&lt;/ul&gt;</code></pre>
+      <strong>Εμφάνιση:</strong>
+      <div class="result">
+        <ul><li>Στοιχείο 1</li><li>Στοιχείο 2</li></ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
