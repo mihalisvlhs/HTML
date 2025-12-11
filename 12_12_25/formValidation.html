@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+  display: inline-block;
+  width: 80px;
+}
+</style>
+
+<script>
+function validateForm() {
+  let f = true;
+  let x = document.forms["myForm"]["fname"].value;
+ 
+
+  if (x == "") {
+    alert("Name must be filled out");
+    f = false;
+  }
+ 
+  return f;
+}
+</script>
+</head>
+
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <label>Name:</label><input type="text" name="fname"><br>
+  <label>Surname:</label><input type="text" name="sname"><br>
+  
+  <!-- Empty label to align the button -->
+  <label></label><input type="submit" value="Submit"><br>
+</form>
+
+</body>
+</html>
 
